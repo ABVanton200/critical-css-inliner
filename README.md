@@ -1,14 +1,14 @@
 # critical-css-inliner
 
-**Critical-css-inliner** allows you to extract and inline critical (**above-the-fold**) CSS in HTML page.
-It might be helpful to speed up **[First Contentful Paint](https://web.dev/first-contentful-paint/)**.
+| **Critical-css-inliner** allows you to extract and inline critical (**above-the-fold**) CSS in HTML page.
+| It might be helpful to speed up **[First Contentful Paint](https://web.dev/first-contentful-paint/)**.
 
 ## How it works
 
-1. Critical-css-inliner finds all external stylesheets (`<link rel="stylesheet" href="...">`).
-2. It extracts critical CSS (above-the-fold).
-3. It inlines critical CSS in HTML page.
-4. It removes critical CSS from external stylesheets.
+1. Critical-css-inliner **finds** all external stylesheets (`<link rel="stylesheet" href="...">`).
+2. It **extracts** critical CSS (above-the-fold).
+3. It **inlines** critical CSS in HTML page.
+4. It **removes** critical CSS from external stylesheets.
 
 ---
 
