@@ -1,7 +1,7 @@
 # critical-css-inliner
 
-| **Critical-css-inliner** allows you to extract and inline critical (**above-the-fold**) CSS in HTML page.
-| It might be helpful to speed up **[First Contentful Paint](https://web.dev/first-contentful-paint/)**.
+> **Critical-css-inliner** allows you to extract and inline critical (**above-the-fold**) CSS in HTML page.
+> It might be helpful to speed up **[First Contentful Paint](https://web.dev/first-contentful-paint/)**.
 
 ## How it works
 
