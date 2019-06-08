@@ -9,6 +9,7 @@
 2. It **extracts** critical CSS (above-the-fold).
 3. It **inlines** critical CSS in HTML page.
 4. It **removes** critical CSS from external stylesheets.
+5. It **makes** external stylesheets asynchronous (using [loadCSS](https://github.com/filamentgroup/loadCSS))
 
 ---
 

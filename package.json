@@ -1,6 +1,6 @@
 {
   "name": "critical-css-inliner",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Inline critical CSS in HTML page",
   "main": "index.js",
   "repository": "https://github.com/ABVanton200/critical-css-inliner",
