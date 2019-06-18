@@ -11,6 +11,8 @@
 4. It **removes** critical CSS from external stylesheets.
 5. It **makes** external stylesheets asynchronous (using [loadCSS](https://github.com/filamentgroup/loadCSS))
 
+**Critical-css-inliner** uses [Critical-css-parser](https://github.com/ABVanton200/critical-css-parser/) under the hood, so IT ALSO SUPPORTS **ADAPTIVE DESIGN** (BOTH DESKTOP AND MOBILE VERSIONS)!
+
 ## Comparison with other popular libraries
 
 Critical-css-inliner                                     | [Critical](https://github.com/addyosmani/critical)
@@ -19,6 +21,7 @@ execution time: **7.4 s**                                | execution time: **4.7
 result: **correct**                                      | result: **wrong**
 <img src="https://i.ibb.co/j5gHrVW/res.png" width="300"> | <img src="https://i.ibb.co/sqnzGXH/Result.png" width="300"> 
 inlined: **15.8 KB (less is better)**                    | inlined: **16.4 KB (less is better)**
+auto extracting: **true**                                | auto extracting: **true** 
 
 [Critters](https://github.com/GoogleChromeLabs/critters) | [Penthouse](https://github.com/pocketjoso/penthouse)
 ---------------------------------------------------------|-------------------------------------------------------
@@ -26,8 +29,7 @@ execution time: **3.5 s**                                | execution time: **3.5
 result: **correct**                                      | result: **wrong**
 <img src="https://i.ibb.co/j5gHrVW/res.png" width="300"> | <img src="https://i.ibb.co/2nhH1RP/res.png" width="300"> 
 inlined: **15.2 KB (less is better)**                    | inlined: **4.7 KB (less is better)**
-
-**Critical-css-inliner** uses [Critical-css-parser](https://github.com/ABVanton200/critical-css-parser/) under the hood, so IT ALSO SUPPORTS **ADAPTIVE DESIGN** (BOTH DESKTOP AND MOBILE VERSIONS)!
+auto extracting: **false**                               | auto extracting: **false** 
 
 ## Installation
 
