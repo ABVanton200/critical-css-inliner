@@ -17,14 +17,14 @@ Critical-css-inliner                                     | [Critical](https://gi
 ---------------------------------------------------------|-------------------------------------------------------
 execution time: **7.4 s**                                | execution time: **4.7 s**
 result: **correct**                                      | result: **wrong**
-<img src="https://i.ibb.co/xsJ37mf/res.png" width="300"> | <img src="https://i.ibb.co/1T1j546/Result.png" width="300"> 
+<img src="https://i.ibb.co/j5gHrVW/res.png" width="300"> | <img src="https://i.ibb.co/sqnzGXH/Result.png" width="300"> 
 inlined: **15.8 KB (less is better)**                    | inlined: **16.4 KB (less is better)**
 
 [Critters](https://github.com/GoogleChromeLabs/critters) | [Penthouse](https://github.com/pocketjoso/penthouse)
 ---------------------------------------------------------|-------------------------------------------------------
 execution time: **3.5 s**                                | execution time: **3.5 s**
 result: **correct**                                      | result: **wrong**
-<img src="https://i.ibb.co/xsJ37mf/res.png" width="300"> | <img src="https://i.ibb.co/YRQwFJ8/res.png" width="300"> 
+<img src="https://i.ibb.co/j5gHrVW/res.png" width="300"> | <img src="https://i.ibb.co/2nhH1RP/res.png" width="300"> 
 inlined: **15.2 KB (less is better)**                    | inlined: **4.7 KB (less is better)**
 
 **Critical-css-inliner** uses [Critical-css-parser](https://github.com/ABVanton200/critical-css-parser/) under the hood, so IT ALSO SUPPORTS **ADAPTIVE DESIGN** (BOTH DESKTOP AND MOBILE VERSIONS)!
