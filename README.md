@@ -31,6 +31,11 @@ result: **correct**                                      | result: **wrong**
 inlined: **15.2 KB (less is better)**                    | inlined: **4.7 KB (less is better)**
 auto extracting: **false**                               | auto extracting: **false** 
 
+---
+**Appropriate webpack plugin:  [webpack-critical-css-inliner](https://github.com/ABVanton200/webpack-critical-css-inliner)**
+
+---
+
 ## Installation
 
 ```sh

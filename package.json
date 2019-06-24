@@ -1,8 +1,11 @@
 {
   "name": "critical-css-inliner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Inline critical CSS in HTML page",
-  "main": "index.js",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
   "repository": "https://github.com/ABVanton200/critical-css-inliner",
   "bugs": {
     "url": "https://github.com/ABVanton200/critical-css-inliner/issues"
@@ -23,20 +26,17 @@
     "adaptive design"
   ],
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "microbundle",
+    "dev": "microbundle watch",
     "test": "mocha --timeout 150000"
   },
   "dependencies": {
-    "critical-css-parser": "^0.2.1",
-    "inline-critical": "^5.2.0",
-    "babel-polyfill": "^6.26.0"
+    "critical-css-parser": "^0.2.3",
+    "inline-critical": "^5.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
     "assert": "^2.0.0",
-    "babel-plugin-transform-regenerator": "^6.26.0",
+    "microbundle": "^0.11.0",
     "mocha": "^6.1.4"
   }
 }

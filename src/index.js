@@ -5,8 +5,6 @@
  * critical-css-inliner
  */
 
-import 'babel-polyfill';
-
 const criticalCSSParser = require('critical-css-parser');
 const inline = require('inline-critical');
 const fs = require('fs');
