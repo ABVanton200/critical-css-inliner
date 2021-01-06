@@ -1,11 +1,12 @@
 {
   "name": "critical-css-inliner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inline critical CSS in HTML page",
-  "source": "src/index.js",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "unpkg": "dist/index.umd.js",
+  "source": "./src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": "./dist/index.modern.js",
+  "unpkg": "./dist/index.umd.js",
   "repository": "https://github.com/ABVanton200/critical-css-inliner",
   "bugs": {
     "url": "https://github.com/ABVanton200/critical-css-inliner/issues"
@@ -31,7 +32,7 @@
     "test": "mocha --timeout 150000"
   },
   "dependencies": {
-    "critical-css-parser": "^1.0.0",
+    "critical-css-parser": "^1.0.1",
     "inline-critical": "^6.0.3"
   },
   "devDependencies": {
