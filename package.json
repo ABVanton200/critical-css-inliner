@@ -1,6 +1,6 @@
 {
   "name": "critical-css-inliner",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Inline critical CSS in HTML page",
   "source": "src/index.js",
   "main": "dist/index.js",
@@ -31,12 +31,12 @@
     "test": "mocha --timeout 150000"
   },
   "dependencies": {
-    "critical-css-parser": "^0.2.3",
-    "inline-critical": "^5.2.0"
+    "critical-css-parser": "^1.0.0",
+    "inline-critical": "^6.0.3"
   },
   "devDependencies": {
     "assert": "^2.0.0",
-    "microbundle": "^0.11.0",
-    "mocha": "^6.1.4"
+    "microbundle": "^0.13.0",
+    "mocha": "^8.2.1"
   }
 }
