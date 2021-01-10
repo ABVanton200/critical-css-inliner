@@ -1,7 +1,7 @@
 /**
- * Copyright (c) 2019, Anton Babakhin
+ * Copyright (c) 2021, Anton Babakhin
  * All rights reserved. (MIT Licensed)
- * 
+ *
  * critical-css-inliner
  */
 
@@ -11,13 +11,13 @@ const fs = require('fs');
 const path = require('path');
 
 const DEFAULTS = {
-    base: 'dist/',
-    src: 'index.html',
-    target: 'index-critical.html',
-    inlineGoogleFonts: true,
-    minify: true,
-    ignoreStylesheets: [/bootstrap/],
-    whitelist: /#foo|\.bar/
+  base: 'dist/',
+  src: 'index.html',
+  target: 'index-critical.html',
+  inlineGoogleFonts: true,
+  minify: true,
+  ignoreStylesheets: [/bootstrap/],
+  whitelist: /#foo|\.bar/
 };
 
 /**
@@ -27,30 +27,30 @@ const DEFAULTS = {
  */
 async function criticalCSSInliner(options) {
 
-    const props = {...DEFAULTS, ...options};
+  const props = { ...DEFAULTS, ...options };
 
-    const css = await criticalCSSParser({
-        type: 'localServer',
-        entrypoint: props.base,
-        filename: props.src,
-        enableGoogleFonts: props.inlineGoogleFonts,
-        minify: props.minify,
-        whitelist: props.whitelist
-    });
+  const css = await criticalCSSParser({
+    type: 'localServer',
+    entrypoint: props.base,
+    filename: props.src,
+    enableGoogleFonts: props.inlineGoogleFonts,
+    minify: props.minify,
+    whitelist: props.whitelist
+  });
 
-    const html = fs.readFileSync(path.resolve(props.base, props.src), 'utf8');
+  const html = fs.readFileSync(path.resolve(props.base, props.src), 'utf8');
 
-    const inlined = inline(html, css.critical, {
-        extract: true,
-        basePath: props.base,
-        minify: props.minify,
-        ignore: props.ignoreStylesheets
-    });
+  const inlined = inline(html, css.critical, {
+    extract: true,
+    basePath: props.base,
+    minify: props.minify,
+    ignore: props.ignoreStylesheets
+  });
 
-    fs.writeFileSync(path.resolve(props.base, props.target), inlined, 'utf8');
-    
-    return true;
-  	
+  fs.writeFileSync(path.resolve(props.base, props.target), inlined, 'utf8');
+
+  return true;
+
 }
 
 module.exports = criticalCSSInliner;
